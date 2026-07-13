@@ -1,4 +1,5 @@
 import { Sequelize } from "sequelize";
+import "../model/User.js";
 
 export const sequelize = new Sequelize("test", "root", "aegon", {
     host: "localhost",
@@ -16,8 +17,6 @@ sequelize.authenticate()
     .then(() => console.log("Database connected successfully via Sequelize"))
     .catch(err => console.error("Database connection failure via Sequelize:", err));
 
-// Import semua model biar Sequelize tau tabel apa aja yang mau di-sync
-import "../model/User.js";
 
 sequelize.sync({ alter: true })
     .then(() => console.log("All models synced successfully"))
