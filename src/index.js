@@ -2,6 +2,7 @@ import express from "express"
 import cookieParser from "cookie-parser"
 import validateToken from "./middleware/validateJwt.js"
 import  errorHandling  from "./middleware/errorHandling.js"
+import "dotenv/config"
 
 import register from "./routes/auth.js"
 import login from "./routes/auth.js"
@@ -31,7 +32,7 @@ app.get("/Home", validateToken,(req,res) => {
     })
 })
 
-const PORT = 4000
+const PORT = process.env.PORT
 
 app.use(errorHandling)
 
