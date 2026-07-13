@@ -12,7 +12,7 @@ const dataStaffService = () => {
                     
                     const topTwo = dataStaff.filter(d => d.sale)
                                     .sort((a,b) => b.sale - a.sale)
-                                    .slice(2,3)
+                                    .slice(0,2)
 
                     const lowest = dataStaff.filter(d => d.sale)
                                     .sort((a,b) => a.sale - b.sale)
