@@ -1,0 +1,180 @@
+{
+  "info": {
+    "_postman_id": "7bbf534d-c65a-4a80-bf5e-db45ea305deb",
+    "name": "TestLiveCoding",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "31983073"
+  },
+  "item": [
+    {
+      "name": "RankedStaff",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Fibonacci",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Registrasi",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"username\":\"Kamal\",\n    \"email\": \"Kamal@gmail.com\",\n    \"password\": \"123456789\",\n    \"name\": \"Ucup Naufal\",\n    \"dateBirth\": \"2003-03-03\",\n    \"age\": 43\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/auth/register",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "auth",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"username\": \"Kamal\",\n    \"password\": \"123456789\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/auth/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DataUsers",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "ListDocument",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4000/documents",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "documents"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "UploadFile",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "description": "gambardjddgdgddgdhdh",
+              "type": "file",
+              "uuid": "290e02f7-14bc-4ebf-af82-2b6820e5420e",
+              "src": "/Users/nawwafnaufal/Documents/Tangkapan Layar 2026-07-01 pukul 21.03.36.png"
+            },
+            {
+              "key": "title",
+              "value": "laaldhdhdhdhdhdh",
+              "description": "djdjddgdgdgddgdgdbdd",
+              "type": "text",
+              "uuid": "51847060-ed1c-4128-9d0b-dbd14397198c"
+            },
+            {
+              "key": "description",
+              "value": "dddddhdududud",
+              "description": "fdfdfdhdhddhdhdhdhd",
+              "type": "text",
+              "uuid": "035b6303-c1d0-4515-aaea-27f683ad6243"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:4000/documents",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "documents"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetDocumnetById",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "UpdateUploadDocument",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "TestJwt",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
